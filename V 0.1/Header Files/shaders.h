@@ -27,7 +27,7 @@ class camera {
 public:
     glm::vec3 cameraPos = glm::vec3(0.0f, 0.0f, 0.0f);
     glm::vec3 upDirection = glm::vec3(0.0f, 1.0f, 0.0f);
-    glm::vec3 cameraDirection, cameraRight, cameraUp;
+    glm::vec3 cameraDirection, cameraRight;
     glm::mat4 model, view, projection;
     void mouse_callback(GLFWwindow* window);
     void updateCamera(shaders* shader);
