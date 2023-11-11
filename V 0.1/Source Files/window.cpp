@@ -73,7 +73,6 @@ void window::update() {
     glGenVertexArrays(1, &VAO);
     glGenBuffers(1, &VBO);
 
-    // Bind VAO first, then bind and set VBO, and configure vertex attributes.
     glBindVertexArray(VAO);
 
     glBindBuffer(GL_ARRAY_BUFFER, VBO);
@@ -96,7 +95,6 @@ void window::update() {
     }
 }
 void window::render() {
-    // Render
     glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
     glClear(GL_COLOR_BUFFER_BIT);
 
